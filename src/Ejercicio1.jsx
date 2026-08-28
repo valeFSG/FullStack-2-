@@ -26,3 +26,16 @@
 
 // 👇 Escribe tu código a partir de aquí:
 
+export default function Ejercicio1(){
+    const nombre = "Valentina";
+    const curso = "Informatica";
+
+    return(
+        <div>
+            <h1>¡hola, {nombre}</h1>
+            <p>Bienvenido al curso de {curso}</p>
+            <p>{new Date().toLocaleDateString()}</p>
+        </div>
+    );
+}
+

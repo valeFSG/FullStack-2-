@@ -25,3 +25,24 @@
  */
 
 // 👇 Escribe tu código a partir de aquí:
+
+
+function TarjetaContacto({ nombre, rol, activo }) {
+    return(
+        <div style={{ border: '1px solid #ccc', padding: '10px', margin: '5px' }}>
+            <h3>{nombre}</h3>
+            <p>Rol: {rol}</p>
+            <p>{activo ? " Activo" : " Inactivo"}</p>
+        </div>
+    );
+}
+
+export default function Ejercicio3() {
+    return(
+        <div> 
+            <TarjetaContacto nombre="Jose" rol="Diseñador" activo={true} />
+            <TarjetaContacto nombre="Axel" rol="Desarrollador" activo={false} />
+            <TarjetaContacto nombre="Nicol" rol="Gerente" activo={true} />
+        </div>
+    )
+}
