@@ -21,24 +21,23 @@
 
 // 👇 Escribe tu código a partir de aquí:
 
-function TarjetaUsuario(){
-    return(
-        <div style={{ border: '1px solid #ccc', padding: '10px', margin: '5px' }}>
-            <h3>Perfil</h3>
-            <p>Nombre: Valentina Santana</p>
-            <p>Rol: Estudiante</p>
-        </div>
-    );
+function TarjetaUsuario({ nombre, rol }) {
+  return (
+    <div style={{ border: '1px solid #ccc', padding: '10px', margin: '5px' }}>
+      <h3>Perfil</h3>
+      <p>Nombre: {nombre}</p>
+      <p>Rol: {rol}</p>
+    </div>
+  );
 }
 
-export default function Ejercicio2(){
-    return(
-        <div>
-            <TarjetaUsuario />
-            <TarjetaUsuario />
-            <TarjetaUsuario />
-        </div>
-    )
+export default function Ejercicio2() {
+  return (
+    <div>
+      <TarjetaUsuario nombre="Valentina Santana" rol="Estudiante" />
+      <TarjetaUsuario nombre="Nicol González" rol="Estudiante" />
+    </div>
+  );
 }
 
 
